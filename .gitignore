@@ -1,0 +1,8 @@
+.VSCodeCounter
+*.code-workspace
+__pycache__
+
+*xml
+shamanism/
+logging/greedy-no-delete
+raspi_docker

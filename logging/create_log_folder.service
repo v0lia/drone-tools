@@ -1,0 +1,13 @@
+[Unit]
+Description=Create log folder on boot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env bash "%h/drone-lab/create_log_folder.sh"
+WorkingDirectory=%h/drone-lab
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
